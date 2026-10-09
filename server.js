@@ -26,4 +26,4 @@ app.get('/api/flows', (req,res)=>{
 
 app.get('/', (req,res)=> res.send('API LIVE - /api/flows'));
 
-app.listen(10000, ()=> console.log('LIVE'));
+app.listen(process.env.PORT || 10000, ()=> console.log('LIVE'));
